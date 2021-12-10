@@ -1,0 +1,37 @@
+doctype html
+html
+	head
+		link(rel='stylesheet' href='css/style.css')
+		meta(name='viewport' content='width=device-width,initial-scale=1')
+			
+	body
+		section.main
+			.content
+				.form
+					.form-image
+						img(src="img/merry_christmas.svg" alt)
+					.form-inside
+						form(action="" method="put")
+							h1 Ho-ho-ho guys! 🎉
+							p.paragraph To take part in our Secret Santa game, make sure to fill in the form below. On December 10 you'll get to know the name of your gift recipient!
+							.form-inside-item
+								label.label.required Full Name
+								input(type="text" placeholder="Dimochka Kozlovskiy").input_text
+							.form-inside-item
+								label.label.required E-mail
+								input(type="text" placeholder="name@satelliteinnovations.io").input_text
+							br
+							h2 Hate surprises? Fill the fields below.
+							.form-inside-item
+								label.label Wish List
+								input(type="text" placeholder='If you’re unsure, type in smth like: “I’d like something sweet”').input_text
+							.form-inside-item
+								label.label Anti Wish List
+								input(type="text" placeholder='If you’re unsure, type in smth like: “I don’t want anything sweet”').input_text
+							br
+							.form-inside-item
+								input(type="submit" value="Send form").button.primary
+
+				.logo
+					a(href="https://satelliteinnovations.io").logo-link
+						img(src="img/Satellite_logo.svg" alt).logo-link__image
